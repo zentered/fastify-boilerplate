@@ -1,0 +1,22 @@
+{
+  "$id": "/requests.json",
+  "type": "object",
+  "definitions": {
+    "company": {
+      "type": "object",
+      "required": [],
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "country": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

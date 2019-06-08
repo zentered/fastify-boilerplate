@@ -1,0 +1,31 @@
+{
+  "$id": "/responses.json",
+  "type": "object",
+  "definitions": {
+    "ok": {
+      "type": "object",
+      "properties": {}
+    },
+    "noContent": {
+      "type": "null"
+    },
+    "company": {
+      "type": "object",
+      "required": [],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "country": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

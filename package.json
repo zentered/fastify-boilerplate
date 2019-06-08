@@ -1,0 +1,79 @@
+{
+  "name": "@heneise/fastify-boilerplate",
+  "version": "1.0.0-semantic-release",
+  "private": true,
+  "license": "MIT",
+  "homepage": "http://heneise.co",
+  "main": "app.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index.js",
+    "debug": "nodemon --inspect=0.0.0.0:9242 index.js",
+    "test": "ava -v",
+    "semantic-release": "semantic-release",
+    "lint": "xo",
+    "autofix": "xo --fix"
+  },
+  "engines": {
+    "node": "^8 || ^10"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "xo"
+    }
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "bracketSpacing": false
+  },
+  "xo": {
+    "prettier": true,
+    "space": true,
+    "ignores": [
+      "seeds",
+      "migrations"
+    ]
+  },
+  "ava": {
+    "files": [
+      "test/**/*.test.js"
+    ]
+  },
+  "dependencies": {
+    "compression": "1.7.4",
+    "dns-prefetch-control": "0.1.0",
+    "fastify": "2.3.0",
+    "fastify-autoload": "0.8.0",
+    "fastify-cors": "^2.1.3",
+    "fastify-jwt": "^0.10.0",
+    "fastify-plugin": "1.5.0",
+    "fastify-static": "^2.4.0",
+    "fastify-swagger": "2.3.2",
+    "frameguard": "3.0.0",
+    "hide-powered-by": "1.0.0",
+    "hsts": "2.2.0",
+    "http-errors": "1.7.2",
+    "http-signature": "^1.2.0",
+    "http-status-codes": "^1.3.2",
+    "ienoopen": "1.1.0",
+    "is_js": "0.9.0",
+    "jssha": "^2.3.1",
+    "jwks-rsa": "^1.4.0",
+    "qs": "^6.7.0",
+    "x-xss-protection": "1.1.0"
+  },
+  "devDependencies": {
+    "ava": "^1.4.1",
+    "chokidar-cli": "1.2.2",
+    "git-cz": "^3.0.1",
+    "husky": "1.3.1",
+    "lint-staged": "8.1.5",
+    "nodemon": "1.18.11",
+    "nyc": "14.0.0",
+    "prettier": "1.17.0",
+    "semantic-release": "^15.13.12",
+    "sinon": "^7.3.2",
+    "xo": "^0.24.0"
+  }
+}
